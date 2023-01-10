@@ -95,6 +95,32 @@ alerta("success", "ok", "Alerta funcionou");
 
 ```
 
+# **Exemplo prático de código :**
+
+```html
+<body>
+  <button onclick="ativaAlerta()">Clique aqui Para Ativar o alerta</button>
+
+  <script src="./sweetalert.js"></script>
+  <script type="text/javascript">
+    function ativaAlerta() {
+      Swal.fire({
+        icon: "success",
+        title: "OK",
+        text: "Funcionou",
+        showConfirmButton: false,
+        timer: 1500,
+        iconColor: "#fff",
+        color: "#fff",
+        background: "#FA01E8 ",
+      });
+    }
+
+    ativaAlerta();
+  </script>
+</body>
+```
+
 ### **Se quiser saber mais propriedades e o que mais pode ser feito utilizando o Sweetalert2, só clicar no Link:**
 
 # [sweetart2](https://sweetalert2.github.io/)

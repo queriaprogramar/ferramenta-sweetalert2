@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.all.min.js"></script>
-</head>
-<body>
-
-    
+  </head>
+  <body>
     <button onclick="ativaAlerta()">Clique aqui Para Ativar o alerta</button>
-  
-<script src="./sweetalert.js"></script>
 
-<script type="text/javascript">
+    <script src="./sweetalert.js"></script>
 
-    function ativaAlerta(){
-       
-        alerta("error", "Ops", "Alerta não Funcionou");
-    }
-
-    function alerta(type,title,mensagem){
+    <script type="text/javascript">
+      function ativaAlerta() {
         Swal.fire({
-            icon: type,
-            title: title,
-            text: mensagem,
-            showConfirmButton: false,
-            timer: 1500,
-            iconColor: '#fff',
-            color: '#fff',
-            background: '#FA01E8 '
-        })
-    }
+          icon: "success",
+          title: "OK",
+          text: "Funcionou",
+          showConfirmButton: false,
+          timer: 1500,
+          iconColor: "#fff",
+          color: "#fff",
+          background: "#FA01E8 ",
+        });
+      }
 
-    
-   </script> 
-</body>
+      ativaAlerta();
+    </script>
+  </body>
 </html>
