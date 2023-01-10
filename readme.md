@@ -116,7 +116,7 @@ alerta("success", "ok", "Alerta funcionou");
       });
     }
 
-    ativaAlerta();
+
   </script>
 </body>
 ```
